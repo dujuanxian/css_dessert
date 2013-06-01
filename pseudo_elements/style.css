@@ -1,0 +1,46 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.first_letter:first-letter {
+	text-transform: uppercase;
+	color: red;
+	font-size: 18px;
+}
+
+.first_line:first-line {
+	font-size: 24px;
+	line-height: 2;
+	color: pink;
+}
+
+.before_after {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	color: white;
+	font: 24px/1 arial;
+}
+
+.before_after:before {
+	content: " ";
+	width: 40px;
+	height: 40px;
+	background-color: purple;
+	position: fixed;
+	display: block;
+}
+
+.before_after:after {
+	content: " ";
+	width: 30px;
+	height: 30px;
+	background-color: blue;
+	position: fixed;
+	display: block;
+}
+
+.pseudo::selection {
+	color: blue;
+}
